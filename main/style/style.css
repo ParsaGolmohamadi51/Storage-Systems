@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'Carnation-font';
+    src: url('../../font/Statics/Mikhak-DS1-FD-Medium.woff2') format('woff2'),
+         url('../../font/Statics/Mikhak-DS1-FD-Medium.woff') format('woff'),
+         url('../../font/Statics/Mikhak-DS1-FD-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Carnation-font', sans-serif;
+    font-size: small;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url("../img/istockphoto-935305296-1024x1024.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(1px); */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open {
+    width: 70%;
+    height: 560px;
+    /* border: 1px solid red; */
+    display: flex;
+
+}
+
+.img {
+    background-image: url("../img/pexels-nataliya-vaitkevich-6863175.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid green; */
+    border-radius: 15px 0 0 15px;
+    width: 50%;
+    height: 100%;
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(3, 55, 199); */
+    border-radius: 0 15px 15px 0;
+    width: 50%;
+    height: 100%;
+}
+
+.log > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    /* border: 1px solid rgb(3, 55, 199); */
+    width: 35%;
+    height: 18%;
+}
+
+.logo:first-child {
+    margin-top: 10%;
+}
+
+.text-welcome {
+    margin-top: 3%;
+}
+
+.email {
+    width: 60%;
+    margin-top: 10%;
+    border-radius: 6px;
+    outline: none;
+    border: 0.5px solid rgb(197, 197, 197);
+    padding: 3.5px 0 4px 3.5px;
+    background-color: #f1f1f1;
+}
+
+.password {
+    width: 60%;
+    margin-top: 2%;
+    border-radius: 6px;
+    outline: none;
+    border: 0.5px solid rgb(197, 197, 197);
+    padding: 3.5px 0 4px 3.5px;
+    background-color: #f1f1f1;
+}
+
+.option-open {
+    width: 61%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#togglePasswordButton {
+    cursor: pointer;
+}
+
+.resize-item {
+    display: flex;
+    align-items: center;
+}
+
+.rest-password:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.button {
+    width: 61%;
+    margin-top: 10%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 4px 0;
+    background-color: rgb(35, 35, 223);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+}
+
+.creat-Account {
+    margin-top: 20%;
+}
+
+.creat-Account:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(25, 82, 82);
+}
+
+.sign-Get-full-name {
+    width: 60%;
+    border-radius: 6px;
+    outline: none;
+    border: 0.5px solid rgb(197, 197, 197);
+    padding: 3.5px 0 4px 3.5px;
+    margin-top: 30%;
+}
+
+.sign-Get-email {
+    width: 60%;
+    border-radius: 6px;
+    outline: none;
+    border: 0.5px solid rgb(197, 197, 197);
+    padding: 3.5px 0 4px 3.5px;
+    margin-top: 5%;
+}
+
+.sign-Get-password {
+    width: 60%;
+    border-radius: 6px;
+    outline: none;
+    border: 0.5px solid rgb(197, 197, 197);
+    padding: 3.5px 0 4px 3.5px;
+    margin-top: 5%;
+}
+
+.sign-Get-phone {
+    width: 60%;
+    border-radius: 6px;
+    outline: none;
+    border: 0.5px solid rgb(197, 197, 197);
+    padding: 3.5px 0 4px 3.5px;
+    margin-top: 5%;
+}
+
+.sign-Up-button {
+    width: 60%;
+    border-radius: 6px;
+    outline: none;
+    border: 0.5px solid rgb(197, 197, 197);
+    padding: 3.5px 0 4px 3.5px;
+    margin-top: 12%;
+    cursor: pointer;
+    background-color: rgb(35, 35, 223);
+    border: 1px solid gray;
+    color: #fff;
+}
+
+.sign-Up-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+}
+
+.open-Account-text {
+    margin-top: 16.3%;
+}
+
+.open-Account-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(25, 82, 82);
+}
+
+@media only screen and (max-width: 1260px) {
+    .open {
+        height: 75vh;
+    }
+    .rest-password {
+        font-size: 10px;
+    }
+    .label-password {
+        font-size: 10px;
+    }
+    .email::placeholder {
+        font-size: 10px;
+    }
+    .password::placeholder {
+        font-size: 10px;
+    }
+    .button {
+        font-size: 10px;
+    }
+    .creat-Account {
+        font-size: 10px;
+    }
+    .creat-Account > span {
+        font-size: 10px;
+    }
+    .logo {
+        width: 30%;
+        height: 16%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .open {
+        height: 70vh;
+    }
+    .option-open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .logo {
+        width: 34%;
+        height: 12%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .open {
+        height: 60vh;
+    }
+    .email {
+        font-size: 7px;
+    }
+    .password {
+        font-size: 7px;
+    }
+    .button {
+        font-size: 7px;
+    }
+    .creat-Account {
+        font-size: 7px;
+    }
+    .creat-Account > span {
+        font-size: 7px;
+    }
+    #togglePasswordButton {
+        width: 10px;
+        height: 10px;
+    }
+    .logo {
+        width: 30%;
+        height: 10%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .open {
+        width: 85%;
+        height: 50vh;
+    }
+    .email {
+        width: 80%;
+    }
+    .password {
+        width: 80%;
+    }
+    .button {
+        width: 81%;
+    }
+    .option-open {
+        width: 81%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .rest-password {
+        font-size: 8px;
+    }
+    .label-password {
+        font-size: 8px;
+    }
+    .email::placeholder {
+        font-size: 8px;
+    }
+    .password::placeholder {
+        font-size: 8px;
+    }
+    .logo {
+        width: 30%;
+        height: 10%;
+    }
+}

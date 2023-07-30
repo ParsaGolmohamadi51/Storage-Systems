@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Carnation-font';
+    src: url('../../font/Statics/Mikhak-DS1-FD-Medium.woff2') format('woff2'),
+         url('../../font/Statics/Mikhak-DS1-FD-Medium.woff') format('woff'),
+         url('../../font/Statics/Mikhak-DS1-FD-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    font-family: Carnation-font;
+    font-size: small;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    width: 94%;
+    height: 95vh;
+    border-radius: 24px;
+    padding: 0 2%;
+    background-color: #fff;
+    margin-top: 1%;
+    /* border: 1px solid red; */
+}
+
+.aside-right {
+    width: 18%;
+    height: 90%;
+    /* border: 1px solid green; */
+}
+
+.aside-right-top {
+    width: 95%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside-right-button {
+    margin-top: 10%;
+    /* border: 1px solid rgb(23, 197, 139); */
+}
+
+.aside-right-button > div {
+    margin: 2% 0;
+    padding: 4% 4% 4% 0;
+    border-radius: 0 18px 18px 0;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.aside-right-button > div:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+
+.aside-left {
+    width: 82%;
+    height: 90%;
+    border-radius: 24px;
+    background-color: #e9e9e9;
+    border: 1px solid #e9e9e9;
+}
+
+.svg-setting {
+    transform-origin: center;
+    transition: transform 1s ease-in-out;
+}
+
+.svg-setting:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.tooltip-container {
+    width: 61%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10%;
+}
+
+.input-resize {
+    position: absolute;
+    right: -30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 0% 4% 0% 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.5s, width 0.4s;
+    width: 0%;
+    margin: 0 4%;
+}
+
+.tooltip-container:hover .input-resize {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+
+.svg-resize-search  {
+    cursor: pointer;
+}
+
+.menu-resize:hover {
+    cursor: pointer;
+}
