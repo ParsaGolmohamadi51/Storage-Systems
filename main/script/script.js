@@ -3,11 +3,13 @@ const passwordField = document?.getElementById("passwordField");
 const togglePasswordButton = document?.getElementById("togglePasswordButton");
 
 togglePasswordButton?.addEventListener('click', () => {
+
     if (passwordField.type === "password") {
       passwordField.type = "text";
     } else {
       passwordField.type = "password";
     }
+
 });
 
 const funcButtonGetInfoUser = (e) => {
@@ -59,7 +61,6 @@ function funcSignUp() {
         localStorage.setItem('phone number', valueGetPhone);
     }
     signUpButton.addEventListener('click', funcGetUserInfo);
-
 }
 
 signUp?.addEventListener('click', funcSignUp);
@@ -128,10 +129,9 @@ const openAccount = () => {
 // home page
 let svgResize = document.getElementById('svg-search');
 
-svgResize.addEventListener('click', function () {
+const funcSearch = () => {
     const visibleInput = document.querySelector('.input-resize');
-    visibleInput.style.visibility = "visible";
-    visibleInput.style.opacity = "1";
-    visibleInput.style.width = "100%";
-});
+    visibleInput.classList.add('show-tooltip');
+};
 
+svgResize?.addEventListener('click', funcSearch);
